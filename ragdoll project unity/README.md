@@ -49,7 +49,15 @@ We implemented a controllable character system that:
    - Toggle ragdoll/animation on a selected mannequin.
    - Observe collision-driven ragdoll propagation and recovery behavior.
 
-## Results & Media
+## Media
+<img width="269" height="179.3" alt="ragdoll1" src="https://github.com/user-attachments/assets/92cf6190-875a-4dee-a0d8-0ae9ed2befd1" />
+<img width="250" height="166.7" alt="ragdollup1" src="https://github.com/user-attachments/assets/f60edeee-b33b-4967-b8e7-6b6fe1f9282b" /><br/> 
+
+
+<img width="250" height="166.7" alt="ragdollup2" src="https://github.com/user-attachments/assets/4765f936-a1d6-40b5-aed1-7491cad39db2" />
+<img width="265.5" height="176.8" alt="ragdollcollision" src="https://github.com/user-attachments/assets/c28925cb-652d-4238-b2e7-17a647b6bfad" />
+
+https://github.com/user-attachments/assets/5c43480f-e065-47af-b594-38932a9d297b
 
 ## Credits & Asset Attribution
 - Built in collaboration with another student (co-author: Malcolm Helasterä).

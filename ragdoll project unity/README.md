@@ -11,7 +11,7 @@ We implemented a controllable character system that:
 - Provides a runtime UI to spawn/despawn mannequins for quick testing and repeatable scenarios.
 
 ## What We built
-**Classes**
+**Classes & Scripts (`Assets/Scripts`)**
 - `Mannequin` — single, cohesive controller implementing the state machine (Walking, Ragdoll, ResettingBones, StandingUp), ragdoll enable/disable, bone reset & alignment, recovery selection, and collision handling.
 - `RagdollBoneCollisionProxy` — lightweight per-bone proxy that forwards `OnCollisionEnter` to the owning `Mannequin`.
 - `MannequinManagerUI.cs` - runtime UI for adding/removing characters to stress-test collisions and recovery.

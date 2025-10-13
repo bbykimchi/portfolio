@@ -1,0 +1,1144 @@
+
+
+
+/*common classes--------------------------------------------------*/ 
+
+.debug {
+    border-style:solid;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.passion-one-bold {
+    font-family: "Passion One", sans-serif;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    font-size:25px;
+
+}
+
+.logoStyle{
+    display: flex;
+    justify-content: center;
+    font-size:500%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Passion One", sans-serif;
+    color: white;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full height of the viewport */
+    text-align: center; /* Center the text */
+}
+
+.alignCentralos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.resultItem {
+
+    flex: 0 0 30%;
+    max-width: 100%;    
+    margin-top: 80px;    
+
+}
+
+.resultRow {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;  
+    min-height: 100vh;      
+    gap: 20px;
+     
+}
+
+.searchLayout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+.imageStyle{
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+body{
+    background: linear-gradient(45deg, blue, red )
+    
+}
+
+
+
+
+div{border:none;  text-align:center;}
+
+.icon-image { /* for sidebarview icons */
+    color:#ffffff;
+    font-size: 30px;
+
+    height: 100px;
+    object-fit: cover; /* Ensures the image scales proportionally */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    gap: 10px;
+}
+
+.icon-image:hover {
+    color:aquamarine;
+    transform: translate(5px);
+}
+
+.menu-item { /* for sidebarview */
+    font-family: "Passion One", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color:#fff;
+    border: none;
+    background: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item:hover {
+    color:aquamarine;
+    transform: translateX(5px); /* slide effect */
+}
+
+.menu-item-small { /* for sidebarview */
+    font-family: "Passion One", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color:#fff;
+    border: none;
+    background: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item-small:hover {
+    color:aquamarine;
+    transform: translateX(5px); /* slide effect */
+}
+
+
+/*styling for cardflip--------------------------------*/
+
+
+.containerForCard{
+    perspective: 1000px;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    margin-left: 65px;
+ 
+}
+
+
+
+
+
+
+.containerForCard:hover > .infoCard {
+    cursor: pointer;
+    transform: rotateY(180deg)
+}
+
+.frontcard,
+.backCard{
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    backface-visibility: hidden;
+    position:absolute;
+}
+
+.backCard{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background-color:rgb(238, 225, 205);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    position: relative;
+    transform: rotateY(180deg);
+    overflow: hidden;
+
+
+}
+.backCardText{
+    white-space: normal;
+    overflow: hidden;
+    text-align: center;
+    word-break: break-word;
+    overflow-y: auto;
+    line-height: 1.4;
+    padding: 10px;
+    width: 90%;
+}
+
+.backCardButton {
+    padding: 10px 15px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: "Passion One", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+.backcard-margin{
+    margin-top: 10px;
+}
+
+.backCardButton:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+.infoCard{
+    position: relative;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+
+
+
+
+/*Styling for the searchbar----------------------------------*/
+
+.searchBar {
+    width: 400px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    padding: 10px;
+    border-radius: 45px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background-color: white;
+
+
+}
+
+.searchBarWrapper {
+    display: inline-block; 
+    position: relative;
+    padding: 80px; 
+    margin: -80px; 
+}
+
+
+.searchBarWrapper:hover .searchBar input {
+    width: 400px;
+}
+
+/*Input i sökbaren styling*/
+.searchBar input{
+    font-size: medium;
+    width: 0;
+    outline: none;
+    border: none;
+    transition: 0.8s;
+    
+    
+}
+
+.SearchformStyle{
+    display: flex;
+    justify-content: center;
+
+}
+
+.searchButton{
+    background-color: transparent;
+    border: none;
+    font-size: x-large;
+
+}
+
+
+.about-us{
+    font-size: larger;
+    color: white;
+    font-family: "Passion One", sans-serif;
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+
+}
+
+
+.back-button2{
+    margin-left: 900px;
+    color: white;
+}
+
+/*styling for backside of card----------------------------------*/
+
+
+.goToDetailsButton{
+    font-size: 20px;
+}
+
+.rating-backside{
+    font-size: xx-large;
+    font-family: "Passion One";
+    color:#5d27c9;
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+
+}
+
+.add-backside{
+    font-size: xx-large;
+    font-family: "Passion One";
+    color:#5d27c9;
+    position: absolute; 
+    top: 10px; 
+    left: 10px;
+    background-color: transparent;
+    border: none; 
+}
+
+.reviewBackside{
+    margin: 10px;
+}
+
+.infobutton{
+    font-size: x-large;
+    color: #5d27c9;
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    
+}
+
+.purple-text{
+    color: #5d27c9;
+    font-family: "Passion One", sans-serif;
+    font-style: normal;
+}
+
+.add-review-text {
+    font-family: "Passion One", sans-serif;
+    font-style: normal;
+    font-size: 20;
+}
+
+
+.removeButton{
+    font-size: x-large;
+    color: #5d27c9;
+    position: absolute; 
+    bottom: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.back-button{
+    color: white;
+    font-size: xx-large;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    color:aquamarine;
+    transform: translateX(5px); /* slide effect */
+}
+
+.rate-text {
+    text-align: center;
+    color: #7e57ce;
+    font-family: "Passion One", sans-serif;
+    font-style: normal;
+    margin: 5px;
+    display: flex;
+}
+
+.rate-text span {
+    align-self: flex-end;
+}
+
+
+
+
+
+/* From Uiverse.io by Yaya12085 */ 
+.google-button {
+    max-width: 320px;
+    display: flex;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    gap: 0.75rem;
+    color: rgb(65, 63, 63);
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .6s ease;
+    margin-top: 20px;
+  }
+  
+  .google-button svg {
+    height: 24px;
+  }
+  
+  .google-button:hover {
+    transform: scale(1.02);
+  }
+
+
+
+
+
+
+
+
+/* detailsView style---------------------------------*/
+.back-button{
+    color: white;
+    font-size: xx-large;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    color:aquamarine;
+    transform: translateX(5px); 
+}
+
+.detailsview-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+  
+}
+
+@media (max-width: 900px) {
+    .detailsview-layout {
+        flex-direction: column; 
+    }
+}
+
+.details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.album-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Passion One";
+    font-size: x-large;
+    color: white;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+.album-cover {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.write-review {
+    font-size: xx-large;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    margin: 50px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.write-review:hover {
+    color:aquamarine;
+    transform: translateX(5px); /* slide effect */
+}
+
+.album-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Passion One";
+}
+
+.album-middle .album-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.album-middle .album-info {
+    font-size: 1.3rem;
+    color: white; 
+    font-family: "Passion One";
+
+}
+
+.track-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-top: 70px;
+    background-color: rgb(238, 225, 205);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    margin-left: 50px;
+
+}
+
+.track-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #5d27c9;
+    color:  #5d27c9; 
+    font-family: "Passion One";
+    font-size: x-large;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.track-item:last-child {
+    border-bottom: none;
+}
+
+.track-name {
+    flex: 2;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.track-duration {
+    flex: 1;
+    text-align: right;
+    margin: 10px;
+}
+
+.starWidget {
+    display: flex;
+    flex-direction: row-reverse; /* Adjusts for flip */
+    justify-content: center
+ }
+
+
+.starContainer{
+    width: 300px;
+
+}
+
+.starContainer .starWidget input{
+    display: none;
+}
+
+.starWidget label{
+    font-size: 30px;
+    padding: 5px;
+    color: #444444b7;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+}
+
+.starWidget input:checked ~ label,
+.starWidget label:hover,
+.starWidget label:hover ~ label {
+    color: #5d27c9;;
+}
+
+.backCard .starWidget {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: center
+}
+
+.review-box {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-textarea {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.review-submit-button {
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;                 
+    color: white;              
+    font-size: x-large;           
+    cursor: pointer; 
+}
+
+.review-submit-button:hover {
+    color:aquamarine;
+    transform: translateX(5px); /* slide effect */
+}
+
+.add-review-text {
+    font-family: "Passion One", sans-serif;
+    font-style: normal;
+    font-size: 20;
+}
+
+.add-review-text:hover {
+    color: aquamarine;
+    transform: translateX(5px)
+}
+
+.review-text {
+    color: white;
+    font-family: "Passion One", sans-serif;
+    font-size: 16;
+    font-style: italic;
+    margin: 20px;
+    width: 300px;
+}
+
+.details-review {
+    font-family: 'Arial, sans-serif';
+    cursor: pointer;
+    color: #5d27c9;
+    margin-top: 25px;
+    text-decoration: underline;
+}
+
+.details-review:hover {
+    color: #aaa; /* lighter text color on hover */
+    transform: translateX(1px); /* slide effect */
+}
+
+
+
+/*homePresenter---------------------------------*/
+
+
+.Main-Content-homepage{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/*myRecordsPresenter----------------------------*/
+
+.errorMessageStyle{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+    font-size: 500%;
+    font-family: "Passion One", sans-serif;
+    color: white;
+}
+
+
+/*homeView-----------------------------------------*/
+
+
+.Title-homepage{
+
+    font-size: 75px;
+    color: white;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+
+ }
+ .Title-homepage2{
+    font-size: 75px;
+    color: #f6fa0a;
+    margin: 0;
+    width: 100%;
+
+ }
+ .description-homepage{
+    color: white;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    text-align: left;
+
+ }
+ .homapage-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 450px;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 270px;
+    scale: 120%;
+
+ }
+.homepage-wrapper{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+
+
+}
+.start-button{
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+       }
+       
+.start-button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+  }
+       
+.start-button:hover::before {
+    width: 9em;
+}
+
+
+/*mostPopularView---------------------------------*/
+
+
+.carousel-container{
+    margin-top: 35px;
+    margin-left: 220px;
+}
+
+.most-popular-text{
+    font-size: x-large;
+    color: white;
+    font-family: "Passion One", sans-serif;
+    margin-top: -75px;
+    margin-left: 75px;
+}
+/* Vertical carousell from https://www.winterwind.com/tutorials/css/75*/
+
+
+body {
+  background-color: #2E3537;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    scale: 80%;
+}
+
+
+
+.imageStyle-carousel{
+    width: 100%;
+    height: auto;
+    max-height: 90%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: -10px;
+}
+
+.card {
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  width: 250px;
+  height: 190px;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 10em;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: carousel 15s linear infinite; /* duration should be 3 multiplied by the total number of cards */
+}
+
+/* Increment animation delay by 3 for each card */
+.card:nth-child(1) {
+  animation-delay: -3s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0;
+}
+
+.card:nth-child(3) {
+  animation-delay: 3s;
+}
+
+.card:nth-child(4) {
+  animation-delay: 6s;
+}
+
+.card:last-child {
+  animation-delay: 9s;
+}
+
+@keyframes  carousel {
+  0% {
+    transform: translateY(100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  3%, 20% { /* 3, 100/total number of cards */
+    transform: translateY(100%) scale(0.7);
+    opacity: 0.4;
+    visibility: visible;
+  }
+  23%, 40% { /* [(100/total number of cards) + 3], [(100/number of cards) * 2] */
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  43%, 60% { /* [(100/total number of cards)*2 + 3], [(100/number of cards) * 3] */
+    transform: translateY(-100%) scale(0.7);
+    opacity: 0.4;
+    visibility: visible;
+  }
+  63% { /* [(100/total number of cards) * 3] + 3 */
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+/*navbarView-------------------------------------------*/
+
+
+.homeView{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    color: white;
+    padding: 10px 20px;
+
+}
+.logo-img{
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: auto;
+
+    scale: 150%;
+
+
+
+}
+.navMenu{
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    position: fixed;
+    top: -22px;
+    height: 100px;
+    width: auto;
+    margin-left: 1130px;
+    scale: 75%;
+
+}
+
+.navMenu li{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/*newReleasesView-------------------------------------*/
+
+
+.resultcontainerV2{
+    width: 120px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    scale: 50%;
+
+
+}
+
+
+.albumInfo2{
+    font-size: 26px;
+    color: white;
+    line-height: 1.2;
+    font-family: "Passion One", sans-serif;;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 150px;
+
+
+}
+.albumInfo2 div{
+    margin: 2px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+
+.new-releases-container{
+    width: 1200px;
+}
+
+.new-releases-text{
+    font-size: x-large;
+    color: white;
+    font-family: "Passion One", sans-serif;
+    margin-top: -75px;
+
+}
+
+.new-container{
+    width: 1200px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+
+.content-box{
+    width: 1800px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+ }
+
+
+
+ .button.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+ 
+ .scroll-button-left{
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 20px solid white;
+    border-left: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+ }
+ .scroll-button-right{
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: transparent;
+    border-left: 20px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+ }
+.scroll-button:hover{
+    border-color: transparent grey transparent transparent;
+ }
+ .left-button{
+    left: -40px;
+ }
+.right-button{
+    right: -40px;
+}
+
+
+/*sidebarView------------------------------------*/
+
+.sidebar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    width: 250px;
+    padding: 5px;
+
+    transition: 300ms;
+    z-index: 1000;
+    
+}
+
+.sidebar-button-open {
+    float: right;
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    background-color: transparent;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    color: rgb(255, 255, 255); /* Text or icon color */
+    font-size: 30px; /* Font size for the toggle symbol */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    cursor: pointer; /* Add a pointer cursor */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth hover effects */
+
+}
+
+.toggle-button:hover {
+    color: #dad3d3; /* lighter text color on hover */
+    transform: translateX(2px); /* slide effect */
+}
+
+.sidebar-button-closed {
+    float: left;
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    background-color: transparent;
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    color: rgb(255, 255, 255); /* Text or icon color */
+    font-size: 30px; /* Font size for the toggle symbol */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    cursor: pointer; /* Add a pointer cursor */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth hover effects */
+}
+
+
+
+.table {
+    width: 100%;
+    border-spacing: 10px 20px; 
+    margin: 15px;
+}
+
+
+
+
+/*accountView----------------------------------------*/
+
+
+
+
+.account-text {
+    font-size: 25px;
+    font-family: "Passion One", sans-serif;
+    font-weight: 150;
+    margin: 20px;
+}
+
+.account-bold {
+    font-family: "Passion One", sans-serif;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    font-size:30px;
+    margin:15px;
+
+}
+
+

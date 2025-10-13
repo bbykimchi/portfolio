@@ -36,7 +36,7 @@ We integrated Spotify’s public API to provide access to a large and dynamic mu
 - **Utilities:** helpers for de-duplication, pagination, and sorting
 - **Testing:** a few focused tests for pure utilities (see `tests/utils`)
 
-## Project Structure (example)
+## Project Structure
 All relevant source files are located in `/src`.
 
 - `/reactjs` - Contains presenters, ReactRoot, and index files  

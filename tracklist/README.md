@@ -1,4 +1,4 @@
-# Tracklist — React + Spotify Web API
+# Tracklist: React + Spotify Web API
 
 > This is a snapshot to demonstrate how the app is built, taken from local at 2025-10-13. No changes have been made to the original code since the snapshot was taken. The live app is already deployed.
 

@@ -10,7 +10,7 @@ We implemented a controllable character system that:
 - Propagates ragdoll-on-impact to nearby characters via collision mediation and thresholding to avoid false triggers.
 - Provides a runtime UI to spawn/despawn mannequins for quick testing and repeatable scenarios.
 
-## What We built
+## What We Built
 **Classes & Scripts (`Assets/Scripts`)**
 - `Mannequin` — single, cohesive controller implementing the state machine (Walking, Ragdoll, ResettingBones, StandingUp), ragdoll enable/disable, bone reset & alignment, recovery selection, and collision handling.
 - `RagdollBoneCollisionProxy` — lightweight per-bone proxy that forwards `OnCollisionEnter` to the owning `Mannequin`.
@@ -27,15 +27,15 @@ We implemented a controllable character system that:
 
 ## Key Technologies
 - **Language & Engine:** C#, Unity (Animator/Mecanim, Rigidbody/Collider/Joint, Physics)
-- **Patterns:** Single Responsibility, explicit interfaces, state enums; data-oriented hot paths for collision checks
-- **Data Structures:** `Dictionary<Transform, BoneData>`, arrays/lists for pose snapshots, lightweight structs for collision events, enums for state/mode
-- **Debug/Tools:** Runtime UI to spawn/despawn agents
+- **Patterns:** Single Responsibility, explicit public methods on a cohesive controller; state enums for clarity
+- **Data Structures:** `Transform[]` for bone hierarchy + `BoneTransform[]` snapshots (Position, Rotation) for face-up, face-down, and ragdoll poses
+- **Debug/Tools:** Runtime UI to spawn/despawn agents (see `MannequinManagerUI.cs`)
 
 ## Technical Highlights
 - **Mode Toggle:** Scripted switch between Animator-driven motion and physics simulation (Unity ragdoll colliders & rigidbodies).
 - **Recovery (Reverse Ragdoll):**
   - Detect hip orientation to select face-up vs face-down stand-up clips.
-  - **Partial-clip entry:** start later in the animation for better continuity.
+  - **Bone reset then play:** interpolate bones from ragdoll snapshot to the animation's start pose over       `_timeToResetBones`, then play the stand-up state.
   - **Transform reset:** restore bone local rotations/positions before blending to avoid twisting.
 - **Collision-Driven Ragdoll Propagation:**
   - Compute approximate force and direction from collisions; determine impacted limb.

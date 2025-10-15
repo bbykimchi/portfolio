@@ -1,4 +1,4 @@
-# Tracklist — React + Spotify Web API
+# Tracklist: React + Spotify Web API
 
 > This is a snapshot to demonstrate how the app is built, taken from local at 2025-10-13. No changes have been made to the original code since the snapshot was taken. The live app is already deployed.
 
@@ -36,7 +36,7 @@ We integrated Spotify’s public API to provide access to a large and dynamic mu
 - **Utilities:** helpers for de-duplication, pagination, and sorting
 - **Testing:** a few focused tests for pure utilities (see `tests/utils`)
 
-## Project Structure (example)
+## Project Structure
 All relevant source files are located in `/src`.
 
 - `/reactjs` - Contains presenters, ReactRoot, and index files  

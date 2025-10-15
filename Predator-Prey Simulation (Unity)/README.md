@@ -1,6 +1,6 @@
 # Predator-Prey Fish Schooling Simulation (Unity)
 
-A course project for **DD1354 Models and Simulation** focused on implementing boids and simulating predator-prey behavior. This is a snapshot taken on 2025-10-15 for showcase purposes; no changes have been made to the original code.
+> A course project for **DD1354 Models and Simulation** focused on implementing boids and simulating predator-prey behavior. This is a snapshot taken on 2025-10-15 for showcase purposes; no changes have been made to the original code.
 
 
 ## Summary

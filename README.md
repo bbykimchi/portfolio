@@ -47,7 +47,7 @@ Having been a gamer my entire life, I approach all my work with a combination of
 A Unity project integrating **ragdoll physics with character animation**, exploring transitions between animation and physical simulation states.  
 Focuses on efficient constraint solving, joint stability, and real-time performance.  
 
-🔗 [View Project Folder](./Ragdoll%20Physics%20Unity)  
+🔗 [View Project Folder](./Ragdoll%20Physics%20(Unity))  
 📄 [Project Report (to be added)]()
 
 ---
@@ -56,7 +56,7 @@ Focuses on efficient constraint solving, joint stability, and real-time performa
 A Unity project simulating **predator–prey behavior in schooling fish**, based on behavioral modeling research.  
 Focuses on accurate group dynamics, tunability, and visually coherent flocking behavior.  
 
-🔗 [View Project Folder](./Predator%20Prey%20Simulation%20Unity)  
+🔗 [View Project Folder](./Predator%20Prey%20Simulation%20(Unity))  
 📄 [Project Report (to be added)]()
 
 ---

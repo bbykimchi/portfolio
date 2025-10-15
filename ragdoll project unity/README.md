@@ -42,7 +42,7 @@ We implemented a controllable character system that:
   - Apply energy/impulse thresholds to prevent cascades from minor contacts.
 
 ## How to Run
-1. Open the Unity project.
+1. Open the Unity project (version 2022.3.57f1).
 2. Load the demo scene (RagdollScene.unity) with the mannequin setup.
 3. Enter Play Mode:
    - Use the UI to spawn/despawn mannequins.

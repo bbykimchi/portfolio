@@ -48,7 +48,7 @@ A Unity project integrating **ragdoll physics with character animation**, explor
 Focuses on efficient constraint solving, joint stability, and real-time performance.  
 
 🔗 [View Project Folder](./Ragdoll%20Physics%20(Unity))  
-📄 [Project Report (to be added)]()
+📄 [Project Report (pdf)](https://drive.google.com/file/d/1NSTIpHaMSJVZVGHT8wb7rQFWCQ6rINJy/view?usp=sharing)
 
 ---
 
@@ -74,12 +74,12 @@ Built with a focus on usability, accessibility, and expressive content presentat
 **Plant Assistant**  
 > A plant-watering assistant built using Arduino. Features a soil moisture sensor and LED display showing watering instructions. Designed to cooperate with a secondary sensor node measuring ambient light.
 
-📄 [Project Report (to be added)]()
+📄 [Project Report (pdf)](https://drive.google.com/file/d/16s2Z9LZpg67-F5f63e0FEg-Tst8LFuZG/view?usp=sharing)
 
 **Plant Predictor**  
 > A small machine learning project comparing algorithms for classifying plant species based on a dataset of leaf features.
 
-📄 [Project Report (to be added)]()
+📄 [Project Report (Google Colab Notebook)](https://colab.research.google.com/drive/1P4DP_Jz1Yk8JoL5qTNM8AU6bFpEkS7Yk?usp=sharing)
 
 ---
 

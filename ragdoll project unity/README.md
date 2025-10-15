@@ -1,6 +1,6 @@
 # Ragdoll Physics + Animation (Unity)
 
-A course project for **DH2323 Computer Graphics and Interaction** focused on integrating Unity’s ragdoll physics with character animation, emphasizing object-oriented design and practical data-structure use. This is a snapshot taken 2025-10-13 for showcase purposes; no changes have been made to the code.
+> A course project for **DH2323 Computer Graphics and Interaction** focused on integrating Unity’s ragdoll physics with character animation, emphasizing object-oriented design and practical data-structure use. This is a snapshot taken 2025-10-13 for showcase purposes; no changes have been made to the code.
 
 ## Summary
 We implemented a controllable character system that:

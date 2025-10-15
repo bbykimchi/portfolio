@@ -65,7 +65,7 @@ Focuses on accurate group dynamics, tunability, and visually coherent flocking b
 A web-based platform for exploring and discussing music where **context and insight matter more than scores**.  
 Built with a focus on usability, accessibility, and expressive content presentation.  
 
-🔗 [View Project Folder](./Tracklist%20(Web%20App%20+%20API))  
+🔗 [View Project Folder](./Tracklist%20(Web%20App%20%2B%20API))  
 
 ---
 

@@ -55,7 +55,8 @@ ProjectSettings/
 
 ## Results & Media
 - Produces a readable cycle: predator disrupts school, chases peripheral prey, then backs off; prey regroup before re-engagement.
-- Parameter sweeps give expected qualitative effects (e.g., more aggressive predator sensing → higher chase cadence).
+
+https://github.com/user-attachments/assets/9ce1d8e7-91ee-4e11-a28a-58e1da919be8
 
 
 ## References

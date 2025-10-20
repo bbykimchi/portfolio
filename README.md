@@ -1,9 +1,7 @@
-# 🎮 Portfolio – Kim Kindvall
+# Portfolio – Kim Kindvall
 
 Welcome!  
 This repository is a collection of my personal and academic projects that explore everything from **software engineering and simulation** to **machine learning, AI, and web design**.  
-
-Having been a gamer my entire life, I approach all my work with a combination of *technical curiosity* and *creative exploration*. Across all disciplines, I aim to develop systems and features that are not only efficient and scalable but also meaningful and enjoyable to use.
 
 ---
 

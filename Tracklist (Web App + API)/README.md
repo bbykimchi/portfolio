@@ -11,7 +11,7 @@
 React (CRA) → Spotify Accounts (authorize) → Callback (/callback)
                   │
                   └── Spotify Web API (search, playlists)
-State: localStorage (draft playlist), in-memory client state (React)
+State: localStorage, in-memory client state (React)
 ```
 
 ## Key Features
@@ -25,7 +25,7 @@ We integrated Spotify’s public API to provide access to a large and dynamic mu
 - Account Page: Highlights a user’s top-rated albums and artists.
 
 ## Notable Implementation Details
-- **Auth:** Authorization Code with PKCE (verifier in localStorage; challenge via SHA-256)
+- **Auth:** Demo Authorization Code
 - **Data fetching:** `fetch` wrappers with minimal error handling
 - **Utilities:** helpers for de-duplication, pagination, and sorting
 - **Testing:** a few focused tests for pure utilities (see `tests/utils`)

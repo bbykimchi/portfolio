@@ -6,12 +6,6 @@
 - **URL:** https://tracklist-841a6.web.app
 - **Stack:** React (CRA), Spotify Web API (Authorization Code - demo setup for coursework)
 
-## What This Repo Shows
-- Player-facing UX for browsing and assembling tracklists
-- Clean SDK/API integration with Spotify (auth, search, paging)
-- Reliability practices: basic tests
-- Accessible UI considerations and empty-state handling
-
 ## Architecture
 ```
 React (CRA) → Spotify Accounts (authorize) → Callback (/callback)

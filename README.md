@@ -1,7 +1,9 @@
 # Portfolio – Kim Kindvall
 
 Welcome!  
-This repository is a collection of my personal and academic projects that explore everything from **software engineering and simulation** to **machine learning, AI, and web design**.  
+This repository is a collection of my personal and academic projects that explore everything from **software engineering and simulation** to **machine learning, AI, and web design**.
+
+This is the repository version of my portfolio, that I created to keep information and snapshots in one place for my own convenience. [Click here](https://bbykimchi.github.io/) to see the website version of my portfolio.
 
 ---
 
@@ -87,6 +89,4 @@ Built with a focus on usability, accessibility, and expressive content presentat
 - 💼 LinkedIn: [linkedin.com/in/kim-kindvall](https://www.linkedin.com/in/kim-kindvall/)
 
 ---
-
-> This portfolio is continuously updated. Please let me know if you encounter any issues or have feedback!
 
